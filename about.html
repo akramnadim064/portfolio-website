@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Nadim Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Nadim<span>.</span></div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="#" class="contact-btn">Contact</a>
+    </nav>
+
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+
+  <!-- ABOUT SECTION -->
+  <section class="about-page fade-in">
+
+    <!-- Profile + Intro -->
+    <div class="about-header">
+      <img src="web.jpeg" class="profile-img" alt="Profile Photo">
+
+      <div class="intro-box">
+        <h1>Md Nadim Akram Raza</h1>
+        <p class="intro-text">
+          I am a passionate Software Developer dedicated to building modern,
+          interactive, and efficient web & mobile applications.
+          I enjoy solving real-world problems through clean UI, optimized code,
+          and user-centric design.
+        </p>
+
+        <a href="resume.pdf" download class="btn-resume">
+          <i class="fa fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Education Timeline -->
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>St. Peter’s Engineering College</h3>
+          <p>B.Tech in Computer Science (2021–2025)</p>
+          <span>Hyderabad</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Central Model School, Kolkata</h3>
+          <p>Intermediate (MPC with CS) (2018–2020)</p>
+          <span>Kolkata</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Army Public School</h3>
+          <p>SCC (2018)</p>
+          <span>Uttarakhand</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Skills Section -->
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills-grid">
+
+      <!-- Languages -->
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <ul>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Dart</li>
+        </ul>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="skill-card">
+        <h3>Frameworks & Technologies</h3>
+        <ul>
+          <li>React.js</li>
+          <li>Next.js</li>
+          <li>Flutter</li>
+          <li>TailwindCSS</li>
+          <li>Node.js</li>
+          <li>MySQL</li>
+          <li>Python</li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-card">
+        <h3>Developer Tools</h3>
+        <ul>
+          <li>Git / GitHub</li>
+          <li>VS Code</li>
+          <li>Postman</li>
+          <li>Excel</li>
+          <li>Power BI</li>
+          <li>Tableau</li>
+          <li>Data visualization</li>
+
+        </ul>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-card">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Communication</li>
+          <li>Leadership</li>
+          <li>Team Building</li>
+          <li>Problem Solving</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <!-- Awards Section -->
+    <h2 class="section-title">Awards</h2>
+    <ul class="awards-list">
+      <li>🏆 Secured 2nd place in National-Level Hackathon (Specathon)</li>
+      <li>🥇 1st place in College-Level Idea Presentation (Engineer’s Day)</li>
+      <li>🏐 Represented JNTUH in All India University Netball Championship</li>
+    </ul>
+
+  </section>
+
+
+  <!-- Contact Popup -->
+  <div id="contactPopup" class="contact-popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Contact Me</h2>
+
+      <!-- Updated Web3Forms Contact Form -->
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+        <input type="hidden" name="access_key" value="6a55b9ba-a8aa-46b3-91e7-8695ed431154">
+
+        <input type="hidden" name="redirect" value="https://akramnadim064.github.io/portfolio-website/">
+
+
+
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Phone</label>
+        <input type="text" name="phone" required>
+
+        <label>Message</label>
+        <textarea name="message" rows="4" required></textarea>
+
+        <button type="submit" class="send-btn">Send</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <hr />
+    <div class="footer-container">
+      <div class="footer-left">© 2025 All Rights Reserved</div>
+      <div class="footer-center"><i class="fas fa-code"></i> Designed by <span>Nadim Akram</span></div>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
